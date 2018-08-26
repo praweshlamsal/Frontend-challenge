@@ -142,7 +142,7 @@ body
 	cursor: pointer;
 	color: #f2f2f2
 }
-.nav-content ul li:nth-child(1)
+.nav-content ul li:hover
 {
 	color: #88c542;
 }

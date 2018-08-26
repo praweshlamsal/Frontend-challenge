@@ -1,6 +1,6 @@
 var i = 0;
 var txt = 'Are you a frontend ninja?';
-var speed = 70;
+var speed = 60;
 
 function typer() {
   if (i < txt.length) {
