@@ -1,0 +1,457 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Neptrip</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+<!--     <link href="css/materialize.min.css"  media="screen,projection"   rel="stylesheet"> -->
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Start your project here-->
+<nav class="navbar navbar-expand-lg navbar-dark nav-color">
+    <a class="navbar-brand" href="#">Neptrip Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+            </li>
+<!--             <li class="nav-item">
+                <a class="nav-link" href="#">Sign Up</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="newprofile.html">Places</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="divider-new">
+    <div class="h2-responsive"><div class="shows">Choice is Yours</div></div>
+    </div>
+    <div class="jumbotron" style="height: 100%;">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+                  <!-- Button trigger modal -->
+            <div class="image-container" data-toggle="modal" data-target="#exampleModal1">
+              <div class="hotel-image">
+                  <img class="check" src="img/background/img2.jpg" alt="">
+              </div>
+              <div class="hotel-image-overlay">
+                  <div class="hotel-name">
+                      <p>Hayatt Residential</p>
+                  </div>
+                  <div class="hotel-rate">
+                     <i class="fas fa-2px fa-star"></i>
+                     <i class="fas fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                  </div>
+              </div>
+            </div>
+                                                <!-- Modal -->
+                                    <div class="modal fade custom-my-modal" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog  custom-modal-dialouge" role="document">
+                                            <div class="modal-content back-hide">
+                                                <div class="modal-body custom-modal">
+                                                    <div id="overlay-book"></div>
+
+                                                            <div class="container-book calendar">
+                                                                <div class="header">
+                                                                    <div class="icon arr prev"></div>
+                                                                    <div class="month">May 2014</div>
+                                                                    <div class="icon arr next"></div>
+                                                                </div>
+
+                                                                <table>
+                                                                    <tr>
+                                                                        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="notCurMonth">29</td><td class="notCurMonth">30</td>
+                                                                        <td>1</td><td>2</td><td class="curDay">3</td><td>4</td><td>5</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>6</td><td class="holiday">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>20</td><td>21</td><td>22</td><td class="holiday">23</td><td>24</td><td>25</td><td>26</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>27</td><td>28</td><td>29</td><td>30</td>
+                                                                        <td class="notCurMonth">1</td><td class="notCurMonth">2</td class="notCurMonth"><td class="notCurMonth">3</td>
+                                                                    </tr>
+                                                                </table>
+                                                                <button class="button-big" id="add_event">Add event</button>
+                                                            </div>
+
+
+                                                            <form action="" class="container-book booking" name="booking">
+                                                                <div class="header">
+                                                                    <div>
+                                                                        <h2>Hotel Nepal</h2>
+                                                                        <div class="icon"></div>
+                                                                        <p>Kathmandu, Nepal</p>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="dates" data-type="none">
+                                                                    <label for="checkin">Check in</label>
+                                                                    <div class="input-text">
+                                                                        <input type="datetime" value="9 July, 2016" id="checkin" readonly>
+                                                                        <div class="icon pop-up"></div>
+                                                                    </div>
+
+                                                                    <label for="checkout">Check out</label>
+                                                                    <div class="input-text">
+                                                                        <input type="text" id="date">
+                                                                        <div class="icon pop-up"></div>
+                                                                    </div>
+
+                                                                    <div class="div-chck">
+                                                                        <input type="checkbox" id="check">
+                                                                        <div class="icon input-text"></div>
+                                                                        <label for="check" class="checkbox">Flexible dates</label>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <ul class="persons">
+                                                                    <li>
+                                                                        <label>Adults</label>
+                                                                        <div class="input-text">
+                                                                            <select name="adults">
+                                                                                <option value="1">1</option>
+                                                                                <option value="2" selected="selected">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>   
+                                                                            </select>
+                                                                            <div class="icon"></div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>Children</label>
+                                                                        <div class="input-text">
+                                                                            <select name="children">
+                                                                                <option value="0">0</option>
+                                                                                <option value="1" selected="selected">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>   
+                                                                            </select>
+                                                                            <div class="icon"></div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+
+                                                                <button class="button-big" id="search"><div class="icon"></div>Search rooms</button>
+                                                            </form>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+        </div>
+        <div class="col-md-4">
+                  <!-- Button trigger modal -->
+            <div class="image-container" data-toggle="modal" data-target="#exampleModal2">
+              <div class="hotel-image">
+                  <img class="check" src="img/background/img1.jpg" alt="">
+              </div>
+              <div class="hotel-image-overlay animated">
+                  <div class="hotel-name">
+                      <p>Yak N Yeti</p>
+                  </div>
+                  <div class="hotel-rate">
+                     <i class="fas fa-2px fa-star"></i>
+                     <i class="fas fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                  </div>
+              </div>
+            </div>
+                                                <!-- Modal -->
+                                    <div class="modal fade custom-my-modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog  custom-modal-dialouge" role="document">
+                                            <div class="modal-content back-hide">
+                                                <div class="modal-body custom-modal">
+                                                    <div id="overlay-book"></div>
+
+                                                            <div class="container-book calendar">
+                                                                <div class="header">
+                                                                    <div class="icon arr prev"></div>
+                                                                    <div class="month">May 2014</div>
+                                                                    <div class="icon arr next"></div>
+                                                                </div>
+
+                                                                <table>
+                                                                    <tr>
+                                                                        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="notCurMonth">29</td><td class="notCurMonth">30</td>
+                                                                        <td>1</td><td>2</td><td class="curDay">3</td><td>4</td><td>5</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>6</td><td class="holiday">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>20</td><td>21</td><td>22</td><td class="holiday">23</td><td>24</td><td>25</td><td>26</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>27</td><td>28</td><td>29</td><td>30</td>
+                                                                        <td class="notCurMonth">1</td><td class="notCurMonth">2</td class="notCurMonth"><td class="notCurMonth">3</td>
+                                                                    </tr>
+                                                                </table>
+                                                                <button class="button-big" id="add_event">Add event</button>
+                                                            </div>
+
+
+                                                            <form action="" class="container-book booking" name="booking">
+                                                                <div class="header">
+                                                                    <div>
+                                                                        <h2>Hotel Relais</h2>
+                                                                        <div class="icon"></div>
+                                                                        <p>Paris, France</p>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="dates" data-type="none">
+                                                                    <label for="checkin">Check in</label>
+                                                                    <div class="input-text">
+                                                                        <input type="datetime" value="9 July, 2016" id="checkin" readonly>
+                                                                        <div class="icon pop-up"></div>
+                                                                    </div>
+
+                                                                    <label for="checkout">Check out</label>
+                                                                    <div class="input-text">
+                                                                        <input type="datetime" value="16 July, 2016" id="checkout" readonly>
+                                                                        <div class="icon pop-up"></div>
+                                                                    </div>
+
+                                                                    <div class="div-chck">
+                                                                        <input type="checkbox" id="check">
+                                                                        <div class="icon input-text"></div>
+                                                                        <label for="check" class="checkbox">Flexible dates</label>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <ul class="persons">
+                                                                    <li>
+                                                                        <label>Adults</label>
+                                                                        <div class="input-text">
+                                                                            <select name="adults">
+                                                                                <option value="1">1</option>
+                                                                                <option value="2" selected="selected">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>   
+                                                                            </select>
+                                                                            <div class="icon"></div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>Children</label>
+                                                                        <div class="input-text">
+                                                                            <select name="children">
+                                                                                <option value="0">0</option>
+                                                                                <option value="1" selected="selected">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>   
+                                                                            </select>
+                                                                            <div class="icon"></div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+
+                                                                <button class="button-big" id="search"><div class="icon"></div>Search rooms</button>
+                                                            </form>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+        </div>
+        <div class="col-md-4">
+                  <!-- Button trigger modal -->
+            <div class="image-container" data-toggle="modal" data-target="#exampleModal">
+              <div class="hotel-image">
+                  <img class="check" src="img/background/img1.jpg" alt="">
+              </div>
+              <div class="hotel-image-overlay animated">
+                  <div class="hotel-name">
+                      <p>Yak N Yeti</p>
+                  </div>
+                  <div class="hotel-rate">
+                     <i class="fas fa-2px fa-star"></i>
+                     <i class="fas fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                     <i class="far fa-2px fa-star"></i>
+                  </div>
+              </div>
+            </div>
+                                                <!-- Modal -->
+                                    <div class="modal fade custom-my-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog  custom-modal-dialouge" role="document">
+                                            <div class="modal-content back-hide">
+                                                <div class="modal-body custom-modal">
+                                                    <div id="overlay-book"></div>
+
+                                                            <div class="container-book calendar">
+                                                                <div class="header">
+                                                                    <div class="icon arr prev"></div>
+                                                                    <div class="month">May 2014</div>
+                                                                    <div class="icon arr next"></div>
+                                                                </div>
+
+                                                                <table>
+                                                                    <tr>
+                                                                        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="notCurMonth">29</td><td class="notCurMonth">30</td>
+                                                                        <td>1</td><td>2</td><td class="curDay">3</td><td>4</td><td>5</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>6</td><td class="holiday">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>20</td><td>21</td><td>22</td><td class="holiday">23</td><td>24</td><td>25</td><td>26</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>27</td><td>28</td><td>29</td><td>30</td>
+                                                                        <td class="notCurMonth">1</td><td class="notCurMonth">2</td class="notCurMonth"><td class="notCurMonth">3</td>
+                                                                    </tr>
+                                                                </table>
+                                                                <button class="button-big" id="add_event">Add event</button>
+                                                            </div>
+
+
+                                                            <form action="" class="container-book booking" name="booking">
+                                                                <div class="header">
+                                                                    <div>
+                                                                        <h2>Hotel Relais</h2>
+                                                                        <div class="icon"></div>
+                                                                        <p>Paris, France</p>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="dates" data-type="none">
+                                                                    <label for="checkin">Check in</label>
+                                                                    <div class="input-text">
+                                                                        <input type="datetime" value="9 July, 2016" id="checkin" readonly>
+                                                                        <div class="icon pop-up"></div>
+                                                                    </div>
+
+                                                                    <label for="checkout">Check out</label>
+                                                                    <div class="input-text">
+                                                                        <input type="datetime" value="16 July, 2016" id="checkout" readonly>
+                                                                        <div class="icon pop-up"></div>
+                                                                    </div>
+
+                                                                    <div class="div-chck">
+                                                                        <input type="checkbox" id="check">
+                                                                        <div class="icon input-text"></div>
+                                                                        <label for="check" class="checkbox">Flexible dates</label>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <ul class="persons">
+                                                                    <li>
+                                                                        <label>Adults</label>
+                                                                        <div class="input-text">
+                                                                            <select name="adults">
+                                                                                <option value="1">1</option>
+                                                                                <option value="2" selected="selected">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>   
+                                                                            </select>
+                                                                            <div class="icon"></div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>Children</label>
+                                                                        <div class="input-text">
+                                                                            <select name="children">
+                                                                                <option value="0">0</option>
+                                                                                <option value="1" selected="selected">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>   
+                                                                            </select>
+                                                                            <div class="icon"></div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+
+                                                                <button class="button-big" id="search"><div class="icon"></div>Search rooms</button>
+                                                            </form>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+<!--     <script type="text/javascript" src="js/materialize.min.js"></script> -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>   
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Neptrip</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body style="height:100%;" onload="welcome();">
+  <div class="hlogin"></div>
+  <div class="welcome">
+      <div class="weltext" style="display: none;">WELCOME HOTEL...</div>
+  </div>
+  <section class="logcard" style="display: none;">
+      <div class="lcard z-depth-5">
+          <form>
+              <!-- Material input -->
+              <div class="md-form">
+                    <i class="fa fa-user-circle prefix" aria-hidden="true"></i>
+                    <input type="text" id="inputValidationEx" class="form-control validate">
+                    <label for="inputValidationEx" data-error="wrong" data-success="right">Hotel Name</label>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix"></i>
+                            <input type="email" id="inputValidationEx1" class="form-control validate">
+                            <label for="inputValidationEx1" data-error="wrong" data-success="right">Hotel's Email</label>
+                        </div>
+                    </div>
+                        <!-- Material input -->
+                    <div class="col">
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" id="inputValidationEx2" class="form-control validate">
+                            <label for="inputValidationEx2" data-error="wrong" data-success="right">Your Password</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                            <div class="md-form">
+                                <i class="fa fa-location-arrow prefix" aria-hidden="true"></i>
+                                <input type="text" id="inputValidationEx3" class="form-control validate">
+                                <label for="inputValidationEx3" data-error="wrong" data-success="right">Hotel Address</label>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="md-form">
+                            <i class="fa fa-cube prefix" aria-hidden="true"></i>
+                            <input type="number" id="form1" class="form-control">
+                            <label for="form1" >Total Rooms</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form">
+                    <i class="fa fa-file-image-o prefix" aria-hidden="true"></i>
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" style="margin-top: -15px;background:transparent;" for="inputGroupFile01">Choose file</label>
+                </div>
+                <div class="md-form">
+                    <i class="fa fa-pencil prefix"></i>
+                    <textarea type="text" id="textareaPrefix" class="form-control md-textarea" style="padding-top:20px !important; padding:0;"></textarea>
+                    <label for="textareaPrefix">Description About Hotel</label>
+                </div>
+                    <div class="col btn" style="background-color: #216a77;">SIGN UP</div>
+          </form>
+      </div>
+  </section>
+
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>   
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

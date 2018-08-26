@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Neptrip</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!-- // Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body onload="start();">
+ <section class="hero1" style="height:100%;overflow: hidden;">
+    <div class="hname">
+        <div class="hname-text">Fishtail Lodge</div>
+    </div>
+    <div class="hdetail">
+        <div class="topic">Add Photos</div>
+        <div class="hlists">
+            <ul id="myTab" role="tablist" class="nav md-pills pills-primary flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" aria-controls="home" role="tab" aria-selected="true"><i class="fa fa-camera" aria-hidden="true"></i>Add Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-building-o" aria-hidden="true"></i>Rooms-detail</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fa fa-check-square-o" aria-hidden="true"></i>Book Request</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-detail">
+            <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="hcolimg">
+                        <div class="h1img">
+                            <img src="img/background/img1.jpg" alt="Your image">
+                        </div>
+                        <div class="h1img">
+                            <img src="img/background/img2.jpg" alt="Your image">
+                        </div>
+                        <div class="h1img">
+                            <img src="img/background/img3.jpg" alt="Your image">
+                        </div>
+                        <div class="h1img">
+                            <img src="img/background/img4.jpg" alt="Your image">
+                        </div>
+                        <div class="h1img">
+                            <img src="img/background/img1.jpg" alt="Your image">
+                        </div>
+                        <div class="h1img">
+                            <img src="img/background/img3.jpg" alt="Your image">
+                        </div>
+                        <div class="addimg">
+                            <div class="addicon">
+                                <input type="file" id="file" style="display:none;" />
+                                <button id="button" style="background-color: transparent;border:none;" name="button" value="Upload" onclick="thisFileUpload();"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+                                <button style="position: absolute;bottom:25px;right:30px;" class="btn btn-sm btn-primary">Upload</button>
+                            </div>
+                        </div>
+
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" style="width:100%;" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="hcolrooms" style="width:100%;">
+                        <div class="autoplay" style="width: 100%;">
+                                <div>
+                                    <div class="hroom"><div align="center" style="width:90px;">Room no  1 </div></div>
+                                </div>
+                                <div>
+                                    <div class="hroom"><div align="center" style="width:90px;">Room no  2 </div></div>
+                                </div>
+                                <div>
+                                    <div class="hroom"><div align="center" style="width:90px;">Room no  3 </div></div>
+                                </div>
+                                <div>
+                                    <div class="hroom"><div align="center" style="width:90px;">Room no  4 </div></div>
+                                </div>
+                                <div>
+                                    <div class="hroom"><div align="center" style="width:90px;">Room no  5 </div></div>
+                                </div>
+                                <div>
+                                    <div class="hroom"><div align="center" style="width:90px;">Room no  6 </div></div>
+                                </div>
+                                <div>
+                                    <div class="hroom"><div align="center" style="width:90px;">Room no  7 </div></div>
+                                </div>
+                                <div>
+                                    <div class="hroom"><div align="center" style="width:90px;">Room no  8 </div></div>
+                                </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" style="width:100%;padding-top: 10px;height: 300px;overflow-y: scroll;" aria-labelledby="contact-tab">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col" style="width:10%;">#</th>
+                          <th scope="col">Full Name</th>
+                          <th scope="col">Room Number</th>
+                          <th scope="col">Approval</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td><button class="btn btn-success btn-sm"><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Approve</button><button class="btn btn-sm btn-danger"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i>&nbsp;&nbsp;Decline</button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td><button class="btn btn-success btn-sm"><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Approve</button><button class="btn btn-sm btn-danger"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i>&nbsp;&nbsp;Decline</button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td><button class="btn btn-success btn-sm"><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Approve</button><button class="btn btn-sm btn-danger"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i>&nbsp;&nbsp;Decline</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+    </div> 
+    <   
+    <div class="hpro z-depth-5">
+        <img src="img/background/places.jpg" alt="Profile image">
+    </div>
+ </section>
+
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>   
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">  
+            $('.autoplay').slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              autoplay: false,
+              autoplaySpeed: 2000,
+            });
+    </script>
+</body>
+
+</html>
