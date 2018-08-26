@@ -1,0 +1,281 @@
+    <!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>FrontEnd Ninja</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body style="height: 100%;" onload="typer();">
+	<section id="hero1">
+		<div class="main-image"></div>
+		<div class="nav-container">
+			<div class="nav-logo" style="display: none;">
+				<div class="logo">
+				<i class="fas fa-user-ninja fa-2x"></i>
+				</div>
+				<div class="logoname">
+					<div class="logoname-top">FRONTEND</div>
+					<div class="logoname-bottom">NINJA</div>
+				</div>
+			</div>
+			<div class="nav-content" style="display: none;">
+				<ul>
+					<li><p>Home</p></li>
+					<li><p>About</p></li>
+					<li><p>Work</p></li>
+					<li><p>Contact</p></li>
+					<li><p><i class="fas fa-1x fa-search"></i></p></li>
+				</ul>
+			</div>
+			<div class="ham" onclick="showfun();" style="display: block;"><i class="fas fa-2x fa-bars"></i></div>
+			<div class="nav-responsive" id="check" align="center" style="display: none;">
+				<div class="nav-logores">
+					<div class="logo">
+					<i class="fas fa-user-ninja fa-2x"></i>
+					</div>
+					<div class="logoname">
+						<div class="logoname-top">FRONTEND</div>
+						<div class="logoname-bottom">NINJA</div>
+					</div>
+				</div>
+				<ul>
+					<li><p>Home</p></li>
+					<li><p>About</p></li>
+					<li><p>Work</p></li>
+					<li><p>Contact</p></li>
+					<li><p><i class="fas fa-1x fa-search"></i></p></li>
+				</ul>
+			</div>
+			<div class="col-icon" id="btn-close" style="display: none">
+			<div class="close" onclick="closefun();">
+				<i class="fas fa-2x fa-times"></i>
+			</div>
+			</div>
+		</div>
+		<div class="col-main-content">
+			<div class="main-content" align="center">
+				<div class="main-ques"><p id="startpage"></p></div>
+				<div class="main-description"><p>Frontend ninjas are the superheroes who bring life into designs. We’re looking for frontend ninjas with knack of amazing attention to detail. Are you one?</p> </div>
+				<div class="main-button">
+					<button class="btn-apply">Apply Now <i class="fas fa-angle-right"></i></button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="hero2">
+		<div class="hero2-content">
+			<div class="hero2-content-title" align="center"><p>What you should have</p></div>
+			<div class="hero2-content-description">
+				<div class="hero2-card" align="center">
+					<div class="card-image">
+						<img class="gallery_img" src="img/cardimg1.jpg">
+					</div>
+					<div class="card-description" align="center">
+						<div class="card-description-title">
+							<p>Attention to detail</p>
+						</div>
+						<div class="card-description-detail">
+							<p>We look for attention to detail in our candidates. As a frontend intern, you should have a superpowers of looking into details of a design.</p>
+						</div>
+					</div>
+				</div>
+				<div class="hero2-card" align="center">
+					<div class="card-image">
+						<img class="gallery_img" src="img/4.jpg">
+					</div>
+					<div class="card-description" align="center">
+						<div class="card-description-title">
+							<p>Frontend tech knowledge</p>
+						</div>
+						<div class="card-description-detail">
+							<p>You must be equipped with a passion to learn and explore new technologies. You are not afraid to implement a new framework or language.</p>
+						</div>
+					</div>
+				</div>
+				<div class="hero2-card" align="center">
+					<div class="card-image">
+						<img class="gallery_img" src="img/1.jpg">
+					</div>
+					<div class="card-description" align="center">
+						<div class="card-description-title">
+							<p>Love for technology</p>
+						</div>
+						<div class="card-description-detail">
+							<p>We eat, sleep and breathe tehcnology. You should have love for technology .</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="hero3">
+		<div class="hero3-resources">
+		   <div class="resources-container">
+		   	<ul>
+		   		<li><p>Resources</p></li>
+		   		<li><p><i class="fas fa-globe"></i><p>Designer News</p></li>
+		   		<li><p><i class="fas fa-globe"></i><p>Smashing Magazine</p></li>
+		   		<li><p><i class="fas fa-globe"></i><p>Frontend Front</p></li>
+		   		<li><p><i class="fas fa-globe"></i><p>View all Resources</p></li>
+		   	</ul>
+		   </div>
+		</div>
+		<div class="hero3-resources">
+			<div class="frontend-container">
+				<ul>
+				<li><p>Latest from frontend</p></li>
+		   		<li><p>JavaScript Performance Optimization Tips: An Overview</p><p>13 hours ago</p></li>
+		   		<li><p>Designing a dashboard for Concourse</p><p>20 November, 2017</p></li>
+		   		<li><p>JSRobot – Learn to code in JavaScript by playing a game</p><p>17 November, 2017</p></li>
+		   		<li><p>View all Updates</p><p style="visibility:hidden;">View all Updates</p></li>
+		   	</ul>
+		   </div>
+
+			</div>
+		</div>
+	</section>
+	<section id="icon" align="center">
+		<div class="myicon"><i class="fas fa-user-ninja fa-3x"></i></div>
+		
+		<div class="line"></div>
+	</section>
+	<section id="hero5">
+		<div class="food-topic" align="center">
+			<div class="food-main"><p>Some random food photos</p></div>
+			<div class="food-base"><p>Just because ¯\_(ツ)_/¯</p></div>
+		</div>
+		<div class="food-image">
+			<div class="food-wrapper">
+				<div class="item">
+					<img src="img/img-food-photos-6.jpg" class="img_gal" alt="">
+				</div>
+				<div class="item">
+					<img src="img/img-food-photos-5.jpg" class="img_gal" alt="">
+				</div>
+				<div class="item">
+					<img src="img/img-food-photos-4.jpg" class="img_gal" alt="">
+				</div>
+				<div class="item">
+					<img src="img/img-food-photos-3.jpg" class="img_gal" alt="">
+				</div>
+				<div class="item">
+					<img src="img/img-food-photos-2.jpg" class="img_gal" alt="">
+				</div>
+				<div class="item">
+					<img src="img/img-food-photos-1.jpg" class="img_gal" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id=hero6>
+		<div class="we_provide">
+			<p>What we provide</p>
+		</div>
+		<div class="provide_detail_wrapper">
+			<div class="provide_detail">
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-user-cog"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>Tailored objectives</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-users"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>Support from senior team</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-laptop-code"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>learning environment</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-utensils"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>Delicious lunch</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-bus"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>Travel expenses/ stipend</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-calendar-alt"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>Five working week</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-clock"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>Flexible time possibility</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-stopwatch"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>Full-timer possibility</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="provide_detail_item" align="center">
+					<div class="wrapper">
+						<div class="icon"><i class="fas fa-3x fa-chalkboard-teacher"></i></div>
+						<div class="provide-all">
+							<div class="provide-title"><p>Socials, retreats, team dinners</p></div>
+							<div class="provide-descrip"><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="icon_bottom" align="center">
+		<div class="myicon_bottom"><i class="fas fa-user-ninja fa-3x"></i></div>
+	</section>
+	<footer id="page-footer">
+		<div class="copyright">
+			<p>&#169; Copyright 2017</p>
+		</div>
+		<div class="nav-footer">
+			<ul>
+				<li><p>Home</p></li>
+				<li><p>About</p></li>
+				<li><p>Contact</p></li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>
